@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+About Us
+{% endblock title %}
+{% block content %}
+
+<!-- About Us Section -->
+<section class="about py-5 bg-light">
+  <div class="container">
+    <img src="{% static 'images/agsthiya.jpg' %}" class="img-fluid rounded shadow agas" alt="About Agasthiyar Herbal Products">
+    <h2 class="text-success font-weight-bold text-center my-4">Agasthiyar Herbal Products</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div>
+            Founded in 1992, <strong>Agasthiyar Herbal Products</strong> is dedicated to preserving the ancient tradition of herbal medicine. We manufacture and supply a wide range of natural herbal powders, syrups, and wellness products, rooted in the rich knowledge of Siddha and Ayurvedic healing.
+          </div><br>
+          <p>
+            Our mission is to deliver high-quality, pure herbal products that help people lead healthier lives—naturally. We ensure strict quality control, sustainable sourcing, and eco-friendly packaging with every product.
+          </p>
+      </div>    
+      <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-3 mt-5">
+                <img src="{% static 'images/gmp.png' %}" class="img-fluid mt-8" alt="About Agasthiyar Herbal Products" height="250px">
+            </div>
+            <div class="col-md-9">
+                GMP certification verifies that all required practices necessary for an effective food safety program are being followed. It addresses hygiene in all aspects of the SGS manufacturing process, including premises and equipment, primary production, packaging, warehousing, distribution, pest control and waste management, as well as routine personal hygiene of personnel. ORGANIC INDIA Pvt. Ltd. meets the requirements of Codex Allmentarius Commission Guidelines, Recommended International Code of Practices, General Principles of Food Hygiene, CAC/RCP 1-1969 Rev. 3 (1997).
+            </div>
+        </div>
+    </div>
+    <hr class="py-3">
+    
+  </div>
+  </div>
+</section>
+
+{% endblock content %}

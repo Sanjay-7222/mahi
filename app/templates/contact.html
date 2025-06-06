@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Contact Us
+{% endblock title %}
+{% block content %}
+
+  <div class="container text-center my-4">
+    <h2>How We Can Help You?</h2>
+    <hr style="width: 60px; margin: auto; border-top: 3px solid #8bc34a;" />
+    <p class="mt-3">
+      GET IN TOUCH WITH US Queries / Feedback / Complaints We are extremely sorry that you are having an issue or complaint with our product or services and regret the inconvenience.
+      We will make every effort to provide a resolution. To get in touch you can: Call us +91 94431 58043 (From 10 AM to 7 PM, Monday to Saturday)<br/>
+      Email us : <strong>agasthiyarherbals@gmail.com</strong>
+    </p>
+  </div>
+
+  <section class="contact-section mb-2">
+    <div class="row text-center mb-4">
+      <div class="col-md-4">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h4>Office</h4>
+                <p>
+                    619 Karpaga Nagar 10th Street NA, K Pudhur, Madurai-625007, Tamil Nadu, India
+                </p>
+                <!-- <h4>Factory Office</h4>
+                <p>
+                ORGANIC INDIA Pvt. Ltd. C-5/10, Agro Park,<br/>
+                UPSIDC Kursi Road Barabanki-225302
+                </p> -->
+            </div>
+      <div class="col-md-4">
+        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+        <h4>Call Us</h4>
+        <p>+91 94431 58043</p>
+      </div>
+      <div class="col-md-4">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>agasthiyarherbals@gmail.com</p>
+            </div>
+    </div>
+
+    <div class="row">
+      <h4 class="text-center mb-3">Drop us a message</h4>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Your name" />
+          </div>
+          <div class="col-md-4">
+            <input type="email" class="form-control" placeholder="abc@example.com" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="9876543210" />
+          </div>
+          <div class="col-12 mt-3">
+            <textarea class="form-control" placeholder="Your message here..." rows="4"></textarea>
+          </div>
+          <div class="col-12 text-center mt-3">
+            <button type="submit" class="btn btn-outline-success text-dark px-5"><strong>SUBMIT</strong></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+{% endblock %}
