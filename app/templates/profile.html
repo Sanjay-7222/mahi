@@ -6,21 +6,21 @@
     <div class="row">
         <h3>Welcome <span class="text-capitalize">{{request.user}} </span></h3>
     
-        <div class="col-sm-2 border-end">
+        <div class="col-md-2 border-end">
             <ul class="list-unstyled">
                 <li class="d-grid"><a href="{% url 'profile' %}" class="btn btn-primary px-5">Profile</a></li>
-                <li class="d-grid"><a href="#" class="btn px-5">Address</a></li>
+                <li class="d-grid"><a href="{% url 'address' %}" class="btn px-5">Address</a></li>
             </ul>
         </div>
-        <div class="col-sm-8 offset-sm-1">
+        <div class="col-md-6 offset-md-1">
             <form action="" method="post">
                 {% csrf_token %}
                 {% for fm in form %}
                     {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small><br>
                 {% endfor %}
                 
-                <div class="col-12 mt-3">
-                    <button type="button" class="btn btn-primary px-4">Submit</button>
+                <div class="col-12 mt-3 text-center">
+                    <button type="submit" class="btn btn-primary px-4">Submit</button>
                 </div>
 
                 {% if form.non_field_errors %}

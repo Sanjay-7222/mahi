@@ -63,5 +63,17 @@ class ProfileView(View):
             reg.save()
             messages.success(request,'Profile Saved Successfully')
         else:
-            messages.error(request,"Invalid Input Data")
+            messages.warning(request,"Invalid Input Data")
         return render(request,'profile.html',locals())
+    
+def address(request):
+    add = Customer.objects.filter(user=request.user)
+    return render(request,'address.html',locals())
+
+class updateAddress(View):
+    def get(self,request,pk):
+        form = CustomerProfileForm()
+        return render(request,"updateadd.html",locals())
+    def post(self,request,pk):
+        form = CustomerProfileForm(request.POST)
+        return render(request,"updateadd.html",locals())

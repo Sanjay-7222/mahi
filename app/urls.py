@@ -16,5 +16,6 @@ urlpatterns = [
     path('login',auth_view.LoginView.as_view(template_name='login.html',authentication_form=LoginForm),name='login'),
     path('password-reset',auth_view.PasswordResetView.as_view(template_name='reset.html',form_class=PasswordResetForm),name='reset'),
     path('profile',ProfileView.as_view(),name='profile'),
-    path('address',ProfileView.as_view(),name='address'),
+    path('address',address,name='address'),
+    path('updateaddress/<int:pk>',updateAddress.as_view(),name='updateaddress'),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
